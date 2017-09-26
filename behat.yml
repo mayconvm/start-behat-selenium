@@ -13,9 +13,13 @@ default:
       javascript_session: selenium2
       default_session: selenium2
       selenium2:
-        browser: chrome
         wd_host: http://localhost:4444/wd/hub
-
+        capabilities:
+          # platform: WINDOWS
+            browser: chrome
+            # extra_capabilities:
+                # chromeOptions:
+                #     args: --start-maximized
   formatters:
     pretty: ~
 
